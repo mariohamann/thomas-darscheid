@@ -6,12 +6,8 @@
 	import Counter from '$lib/Counter.svelte';
 </script>
 
-<svelte:head>
-	<title>Home</title>
-</svelte:head>
-
 <section>
-	<h1 class="uppercase text-lg">
+	<h1 class="uppercase text-xl">
 		Hello People of Earth
 	</h1>
 
@@ -29,9 +25,5 @@
 		justify-content: center;
 		align-items: center;
 		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
 	}
 </style>

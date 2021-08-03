@@ -1,46 +1,30 @@
 <script lang="ts">
-	import Header from '$lib/header/Header.svelte';
+	import Header from '$lib/content/Header.svelte';
+	import Logos from '$lib/content/Logos.svelte';
+	import Portfolio from '$lib/content/Portfolio.svelte';
+	import Features from '$lib/content/Features.svelte';
+	import Profile from '$lib/content/Profile.svelte';
+	import Cta from '$lib/content/Cta.svelte';
+	import Footer from '$lib/content/Footer.svelte';
 	import '../app.css';
 	import "../styles/tailwind-output.css";
 </script>
 
-<Header />
+<div class="bg-white font-serif">
+  <header>
+    <Header />
+  </header>
 
-<main>
-	<slot />
-</main>
-
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
+  <main>
+    
+	<Logos />
+    <Portfolio />
+    <Features />
+	<Profile />
+	<Cta />
+  </main>
+  <Footer />
+</div>
 
 <style>
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 1024px;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
-	}
 </style>
