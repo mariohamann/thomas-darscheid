@@ -16,11 +16,6 @@
                 times: [1, 1.7, 2.3, 3.2, 3.9]
             }
         ];
-        audioElements[0].audio.addEventListener('loadeddata', () => {
-            let duration = audioElements[0].audio.duration;
-            // The duration variable now holds the duration (in seconds) of the audio clip
-            console.log(duration)
-        })
         currentAudio = audioElements[0];
 	});
 
@@ -33,7 +28,7 @@
             currentAudio.audio.currentTime = 0;
             currentAudio.audio.play();
         }
-        
+
         else{
             let n = 0;
 
@@ -58,11 +53,6 @@
             });
         }
     }
-
-    // function playTime(){
-    //     audioElements[1].audio.currentTime = audioElements[1].times[4]
-    //     audioElements[1].audio.play();
-    // }
 
 </script>
 
