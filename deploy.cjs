@@ -22,5 +22,5 @@ const config = {
 
 ftpDeploy
     .deploy(config)
-    .then((res) => console.log("finished:", res))
+    .then((res) => console.log("finished:", res, '\n🚀 Deployed on https://demo.thomas-darscheid.de'))
     .catch((err) => console.log(err));

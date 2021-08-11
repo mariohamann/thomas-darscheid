@@ -1,5 +1,6 @@
 <script lang="ts">
 	// import { page } from '$app/stores';
+  import Player from './components/Player.svelte';
 	import image from '../assets/img/hero-image-demo1.jpg';
 </script>
 
@@ -90,9 +91,7 @@
             Ihr Inhalt und Ihre Botschaft stehen im Mittelpunkt – mit meiner Stimme sorge ich für den passenden Ton. 
           </p>
           <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-            <div class="rounded-md shadow">
-              [PLATZHALTER]
-            </div>
+              <Player/>
           </div>
         </div>
       </main>
