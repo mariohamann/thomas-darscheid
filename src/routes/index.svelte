@@ -2,10 +2,6 @@
 	export const prerender = true;
 </script>
 
-<script lang="ts">
-	import Counter from '$lib/Counter.svelte';
-</script>
-
 <section>
 	<h1 class="uppercase text-xl">
 		Hello People of Earth
@@ -15,7 +11,6 @@
 		try editing <strong>src/routes/index.svelte</strong>
 	</h2>
 
-	<Counter />
 </section>
 
 <style>
